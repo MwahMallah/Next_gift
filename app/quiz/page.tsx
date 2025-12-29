@@ -280,7 +280,7 @@ export default function Quiz() {
                       validate: (v) => {
                         const n = normalize(v ?? "");
                         if (!n) return "Напиши, что ты думаешь 🙂";
-                        if (!n.includes("70"))
+                        if (!n.includes("999"))
                           return "Подсказка: посмотри внимательно на график 😌";
                         return true;
                       },

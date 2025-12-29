@@ -5,6 +5,7 @@ import { motion, useScroll, useTransform } from "framer-motion";
 import TripsBar from "@/components/charts/TripsBar";
 import MeetInBrnoMap from "@/components/sections/MeetInBrnoMap";
 import LiveTogetherTimer from "@/components/sections/LiveTogetherTimer";
+import AutoAudio from "@/components/common/AutoAudio";
 
 function Reveal({
   children,
@@ -167,6 +168,8 @@ export default function GiftWrapped() {
 
   return (
     <main className="relative min-h-screen bg-[#0b0b10] text-white">
+      <AutoAudio />
+
       {/* ===== Sticky background ===== */}
       <div className="pointer-events-none fixed inset-0">
         {photos.map((src, i) => (

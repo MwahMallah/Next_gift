@@ -12,8 +12,8 @@ import {
 
 export default function HappinessBar() {
   const happinessData = [
-    { name: "До тебя", value: 3 },
-    { name: "С тобой", value: 210 },
+    { name: "До тебя", value: 2 },
+    { name: "С тобой", value: 1998 },
   ];
 
   return (<div className="mt-4 h-[180px] w-full rounded-xl border border-white/15 bg-black/20 p-3">
@@ -26,8 +26,8 @@ export default function HappinessBar() {
             tickLine={false}
           />
           <YAxis
-            domain={[0, 230]}
-            ticks={[0, 25, 50, 75, 100, 150, 200]}
+            domain={[0, 2200]}
+            ticks={[0, 500, 1000, 1500, 2000]}
             width={30}
             tick={{ fill: "rgba(255,255,255,0.7)", fontSize: 12 }}
             axisLine={{ stroke: "rgba(255,255,255,0.25)" }}

@@ -1,3 +1,5 @@
+"use client"
+
 import { useMemo, useState, useEffect } from "react";
 
 function pad2(n: number) {
